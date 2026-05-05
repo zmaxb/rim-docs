@@ -1,0 +1,58 @@
+site_name: РИМ
+site_description: Расширение Интеграции Мессенджеров (РИМ)
+site_author: zmaxb
+
+theme:
+  name: material
+  language: ru
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    scheme: slate
+    primary: black
+    accent: deep purple
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - def_list
+  - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Главная:
+      - 📘 Введение: index.md
+      - 🚀 Быстрый старт: getting-started.md
+  - Интеграции:
+      - 🚧 В разработке: integrations/index.md
+  - Боты:
+      - 🚧 В разработке: bots/index.md
