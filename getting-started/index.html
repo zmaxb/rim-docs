@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -423,10 +425,60 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ▶️ Общий сценарий
+        📦 Установка
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤖 Создание тестового бота
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 Создание тестового бота">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1️⃣ Создание бота
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2️⃣ Настройка параметров
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3️⃣ Проверка бота
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -652,10 +704,60 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ▶️ Общий сценарий
+        📦 Установка
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤖 Создание тестового бота
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 Создание тестового бота">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1️⃣ Создание бота
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2️⃣ Настройка параметров
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3️⃣ Проверка бота
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -678,17 +780,61 @@
 
   <h1>🚀 Быстрый старт</h1>
 
-<p>РИМ не содержит готовых ботов для реального использования, однако включает тестовый бот, который можно использовать для проверки работы системы.</p>
-<h3 id="_1">▶️ Общий сценарий</h3>
-<ol>
-<li>Подключается мессенджер  </li>
-<li>Настраивается бот  </li>
-<li>РИМ принимает входящие события  </li>
-<li>Бот обрабатывает их  </li>
-<li>При необходимости формируется и отправляется ответ</li>
-</ol>
-<p>Бот — это основной способ реализации логики в РИМ.
-Он обрабатывает входящие события и определяет, как система должна на них реагировать.</p>
+<p>Инструкция позволяет выполнить базовую настройку РИМ и запустить демонстрационного Telegram-бота.</p>
+<div class="admonition tip">
+<p class="admonition-title">Что потребуется</p>
+<p>Перед началом настройки убедитесь, что:</p>
+<ul>
+<li>создан Telegram-бот через BotFather</li>
+<li>получен токен Telegram-бота</li>
+</ul>
+</div>
+<h3 id="_1">📦 Установка</h3>
+<p>Установите расширение РИМ и предоставьте необходимые разрешения, как показано на скриншоте ниже.</p>
+<p><a href="../img/extension-install.png"><img alt="Установка расширения РИМ" src="../img/extension-install.png" /></a></p>
+<hr />
+<h3 id="_2">🤖 Создание тестового бота</h3>
+<p>Бот — это основной компонент РИМ. Он принимает входящие события от мессенджеров и определяет, как система должна на них реагировать.</p>
+<div class="admonition info">
+<p class="admonition-title">Демонстрационный бот</p>
+<p>РИМ не включает готовых ботов для промышленного использования, однако содержит демонстрационный бот, который можно использовать для проверки работы системы.</p>
+</div>
+<h4 id="1">1️⃣ Создание бота</h4>
+<p>Откройте справочник <code>Боты мессенджеров</code> в подсистеме <code>Интеграция мессенджеров</code>.</p>
+<p>Создайте нового бота и заполните:</p>
+<ul>
+<li><strong>Наименование</strong> — произвольное имя  </li>
+<li><strong>Модель</strong> — выберите <code>Предопределенный бот (демонстрационный)</code>  </li>
+<li><strong>Параметры бота</strong> — выберите тип данных <code>Параметры бота Telegram</code></li>
+</ul>
+<p><a href="../img/bot-create.png"><img alt="Создание бота" src="../img/bot-create.png" /></a></p>
+<hr />
+<h4 id="2">2️⃣ Настройка параметров</h4>
+<p>Создайте параметры для нового бота.</p>
+<p>Заполните:</p>
+<ul>
+<li><strong>Наименование</strong> — произвольное имя</li>
+<li><strong>Токен</strong> — токен бота Telegram</li>
+</ul>
+<p>После заполнения сохраните изменения.</p>
+<p>Для проверки корректности настроек используйте команду <code>Проверить подключение</code>.<br />
+При успешном подключении отобразится окно с информацией о боте.</p>
+<p><a href="../img/bot-params.png"><img alt="Параметры бота" src="../img/bot-params.png" /></a></p>
+<p>Созданные параметры укажите в поле <strong>Параметры бота</strong> при настройке бота.</p>
+<hr />
+<h4 id="3">3️⃣ Проверка бота</h4>
+<p>После установки параметров выполните запись нового бота.</p>
+<p>После записи в списке ботов в колонке <strong>Состояние обработки</strong> должно отображаться значение <code>Выполняется</code>.</p>
+<p><a href="../img/bot-status.png"><img alt="Состояние обработки" src="../img/bot-status.png" /></a></p>
+<p>Это означает, что бот готов к обработке входящих сообщений и отправке ответов.</p>
+<p>После успешного запуска бота начните чат с Telegram-ботом и отправьте любое сообщение.</p>
+<p><a href="../img/telegram-bot-response.png"><img alt="Проверка бота" src="../img/telegram-bot-response.png" /></a></p>
+<div class="admonition success">
+<p class="admonition-title">Проверка выполнена успешно</p>
+<p>При корректной настройке бот должен ответить сообщением:</p>
+<div class="highlight"><pre><span></span><code>Hello World
+</code></pre></div>
+</div>
 
 
 
