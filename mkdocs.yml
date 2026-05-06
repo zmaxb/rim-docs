@@ -56,3 +56,6 @@ nav:
       - 🚧 В разработке: integrations/index.md
   - Боты:
       - 🚧 В разработке: bots/index.md
+
+extra_css:
+  - stylesheets/extra.css

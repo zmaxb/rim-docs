@@ -1,0 +1,6 @@
+.md-content img {
+    border-radius: 3px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    transition: all 0.25s ease;
+    border: 2px solid rgba(255,255,255,0.08);
+}
