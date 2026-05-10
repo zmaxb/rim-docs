@@ -50,10 +50,18 @@ markdown_extensions:
 
 nav:
   - Главная:
-      - 📘 Введение: index.md
-      - 🚀 Быстрый старт: getting-started.md
+    - 📘 Введение: index.md
+    - 🚀 Быстрый старт:
+      - Telegram: getting-started/telegram.md
+      - ВКонтакте: getting-started/vk.md
   - Интеграции:
-      - 🚧 В разработке: integrations/index.md
+      - 📘 Обзор: integrations/index.md
+      - ⚙️ Архитектура: integrations/architecture.md
+      - 📨 Очереди обработки: integrations/queues.md
+      - 🔐 Управление доступом: integrations/access-control.md
+      - ⚙️ Настройки интеграций: integrations/settings.md
+      - 🧩 Создание интеграции: integrations/create-integration.md
+      - 🧱 Модель данных: integrations/data-model.md
   - Боты:
       - 🚧 В разработке: bots/index.md
 
