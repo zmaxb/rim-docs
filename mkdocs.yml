@@ -55,8 +55,8 @@ nav:
       - Telegram: getting-started/telegram.md
       - ВКонтакте: getting-started/vk.md
   - Интеграции:
-      - 📘 Обзор: integrations/index.md
-      - ⚙️ Архитектура: integrations/architecture.md
+      - 📘 Введение: integrations/index.md
+      - 🏗️ Архитектура: integrations/architecture.md
       - 📨 Очереди обработки: integrations/queues.md
       - 🔐 Управление доступом: integrations/access-control.md
       - ⚙️ Настройки интеграций: integrations/settings.md
