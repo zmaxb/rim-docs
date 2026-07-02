@@ -58,7 +58,6 @@ nav:
       - 📘 Введение: integrations/index.md
       - 🏗️ Архитектура: integrations/architecture.md
       - 🔐 Управление доступом: integrations/access-control.md
-      - ⚙️ Настройки интеграций: integrations/settings.md
       - 🧩 Создание интеграции: integrations/create-integration.md
   - Боты:
       - 🚧 В разработке: bots/index.md
