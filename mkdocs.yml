@@ -50,17 +50,22 @@ markdown_extensions:
 
 nav:
   - Главная:
-    - 📘 Введение: index.md
-    - 🚀 Быстрый старт:
-      - Telegram: getting-started/telegram.md
-      - ВКонтакте: getting-started/vk.md
+      - 📘 Введение: index.md
+      - 🚀 Быстрый старт:
+          - Telegram: getting-started/telegram.md
+          - ВКонтакте:
+              - Быстрый старт: getting-started/vk.md
+              - Подготовка сообщества: getting-started/vk-community.md
+
+  - Боты:
+      - 📘 Введение: bots/index.md
+      - 🤖 Создание бота: bots/create-bot.md
+
   - Интеграции:
       - 📘 Введение: integrations/index.md
       - 🏗️ Архитектура: integrations/architecture.md
       - 🔐 Управление доступом: integrations/access-control.md
       - 🧩 Создание интеграции: integrations/create-integration.md
-  - Боты:
-      - 🚧 В разработке: bots/index.md
 
 extra_css:
   - stylesheets/extra.css
