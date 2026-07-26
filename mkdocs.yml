@@ -2,6 +2,8 @@ site_name: РИМ
 site_description: Расширение Интеграции Мессенджеров (РИМ)
 site_author: zmaxb
 
+copyright: Документация РИМ · Редакция от 25.07.2026
+
 theme:
   name: material
   language: ru
@@ -16,9 +18,8 @@ theme:
     accent: deep purple
 
   features:
-    - navigation.tabs
+    #- navigation.expand
     - navigation.sections
-    - navigation.expand
     - navigation.top
     - search.suggest
     - search.highlight
@@ -49,22 +50,27 @@ markdown_extensions:
       custom_checkbox: true
 
 nav:
-  - Главная:
+  - Расширение:
       - 📘 Введение: index.md
-      - 🚀 Быстрый старт:
-          - Telegram: getting-started/telegram.md
-          - ВКонтакте:
-              - Быстрый старт: getting-started/vk.md
-              - Подготовка сообщества: getting-started/vk-community.md
+      - 📦 Установка: getting-started/installation.md
+      - 🚀 Telegram: getting-started/telegram.md
+      - 🚀 ВКонтакте:
+          - Подготовка сообщества: getting-started/vk-community.md
+          - Проверка бота: getting-started/vk.md
 
   - Боты:
       - 📘 Введение: bots/index.md
-      - 🤖 Создание бота: bots/create-bot.md
+      - 🧠 Модель:
+          - 🧪 Создание модели: bots/create-model.md
+          - 📚 Разработка моделей: bots/model-development.md
+      - 🤖 Бот:
+          - 🧪 Создание бота: bots/create-bot.md
+          - 📚 Разработка ботов: bots/bot-development.md
 
   - Интеграции:
       - 📘 Введение: integrations/index.md
-      - 🏗️ Архитектура: integrations/architecture.md
-      - 🔐 Управление доступом: integrations/access-control.md
+      - 📐 Архитектура: integrations/architecture.md
+      - 🔑 Управление доступом: integrations/access-control.md
       - 🧩 Создание интеграции: integrations/create-integration.md
 
 extra_css:
