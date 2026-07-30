@@ -235,7 +235,7 @@
   <span class="md-ellipsis">
     
   
-    Расширение
+    Начало работы
   
 
     
@@ -251,7 +251,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Расширение
+    Начало работы
   
 
           </label>
@@ -319,9 +319,22 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../telegram/" class="md-nav__link">
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -335,7 +348,51 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🚀 Telegram
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telegram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Проверка бота
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -462,7 +519,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🆔 Идентификатор сообщества
+        Идентификатор сообщества
       
     </span>
   </a>
@@ -473,7 +530,7 @@
   <a href="#long-poll-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔌 Настройка Long Poll API
+        Настройка Long Poll API
       
     </span>
   </a>
@@ -484,7 +541,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔑 Ключ доступа
+        Ключ доступа
       
     </span>
   </a>
@@ -531,6 +588,34 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📖 Глоссарий
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1057,7 +1142,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🆔 Идентификатор сообщества
+        Идентификатор сообщества
       
     </span>
   </a>
@@ -1068,7 +1153,7 @@
   <a href="#long-poll-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔌 Настройка Long Poll API
+        Настройка Long Poll API
       
     </span>
   </a>
@@ -1079,7 +1164,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔑 Ключ доступа
+        Ключ доступа
       
     </span>
   </a>
@@ -1103,29 +1188,30 @@
 
 
 
-<h1 id="_1">🚀 Подготовка сообщества ВКонтакте</h1>
+<h1 id="_1">Подготовка сообщества ВКонтакте</h1>
 <p>Для подключения сообщества ВКонтакте к РИМ необходимо получить идентификатор сообщества, включить Long Poll API и создать ключ доступа.</p>
 <p>На этой странице описаны только настройки, необходимые для работы демонстрационного бота.</p>
-<h2 id="_2">🆔 Идентификатор сообщества</h2>
+<h2 id="_2">Идентификатор сообщества</h2>
 <p>Откройте настройки созданного сообщества.</p>
 <p><a href="../../img/vk-community/get-id.png"><img alt="Страница сообщества" src="../../img/vk-community/get-id.png" /></a></p>
 <p>Скопируйте числовую часть адреса сообщества после <code>club</code>.</p>
 <p>Например: <code>https://vk.com/club123456789</code> → <code>123456789</code>.</p>
 <p>Полученное значение потребуется при настройке параметров интеграции ВКонтакте в РИМ.</p>
 <hr />
-<h2 id="long-poll-api">🔌 Настройка Long Poll API</h2>
+<h2 id="long-poll-api">Настройка Long Poll API</h2>
 <p>На странице <strong>Работа с API</strong> перейдите в раздел <strong>Long Poll API</strong>.</p>
 <p><a href="../../img/vk-community/lp-api.png"><img alt="Страница Long Poll API" src="../../img/vk-community/lp-api.png" /></a></p>
 <p>Включите использование Long Poll API, затем откройте настройки типов событий.</p>
-<p>Для работы демонстрационного бота достаточно включить получение входящих сообщений.</p>
+<p>Для работы демонстрационного бота достаточно включить получение входящих запросов.</p>
 <p><a href="../../img/vk-community/lp-api-events.png"><img alt="Типы событий Long Poll API" src="../../img/vk-community/lp-api-events.png" /></a></p>
 <hr />
-<h2 id="_3">🔑 Ключ доступа</h2>
+<h2 id="_3">Ключ доступа</h2>
 <p>После настройки Long Poll API перейдите на вкладку <strong>Ключи доступа</strong>.</p>
 <p>Создайте новый ключ доступа.</p>
 <p><a href="../../img/vk-community/api-key.png"><img alt="Страница создания ключа" src="../../img/vk-community/api-key.png" /></a></p>
 <p>И предоставьте ему необходимые разрешения, как показано на скриншоте ниже.</p>
 <p><a href="../../img/vk-community/api-key-acces.png"><img alt="Разрешения ключа доступа" src="../../img/vk-community/api-key-acces.png" /></a></p>
+<p>Скопируйте созданный ключ доступа: он потребуется при настройке параметров бота в РИМ.</p>
 <div class="admonition warning">
 <p class="admonition-title">Безопасность ключа</p>
 <p>Не публикуйте ключ доступа и не передавайте его третьим лицам.</p>
@@ -1137,6 +1223,7 @@
 <li>ключ доступа сообщества.</li>
 </ul>
 <p>Эти данные используются при создании параметров интеграции ВКонтакте в РИМ.</p>
+<p>Далее настройте <a href="../vk/">демонстрационного бота ВКонтакте</a>.</p>
 
 
 
@@ -1174,7 +1261,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Документация РИМ · Редакция от 25.07.2026
+      Документация РИМ · Редакция от 30.07.2026
     </div>
   
   
