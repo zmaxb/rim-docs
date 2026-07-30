@@ -2,7 +2,7 @@ site_name: РИМ
 site_description: Расширение Интеграции Мессенджеров (РИМ)
 site_author: zmaxb
 
-copyright: Документация РИМ · Редакция от 25.07.2026
+copyright: Документация РИМ · Редакция от 30.07.2026
 
 theme:
   name: material
@@ -50,13 +50,15 @@ markdown_extensions:
       custom_checkbox: true
 
 nav:
-  - Расширение:
+  - Начало работы:
       - 📘 Введение: index.md
       - 📦 Установка: getting-started/installation.md
-      - 🚀 Telegram: getting-started/telegram.md
+      - 🚀 Telegram:
+          - Проверка бота: getting-started/telegram.md
       - 🚀 ВКонтакте:
           - Подготовка сообщества: getting-started/vk-community.md
           - Проверка бота: getting-started/vk.md
+      - 📖 Глоссарий: glossary.md
 
   - Боты:
       - 📘 Введение: bots/index.md
